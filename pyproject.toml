@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grafana-mcp-server"
+version = "1.0.0"
+description = "Servidor MCP (Model Context Protocol) universal para Grafana com 100 ferramentas em português para criação de dashboards por prompt, consultas PromQL/LogQL/SQL, observabilidade, alertas, incidentes e relatórios."
+readme = "README.md"
+authors = [
+    { name = "Natanael Krindges", email = "natanael1097@gmail.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.11"
+keywords = ["mcp", "grafana", "observability", "prometheus", "loki", "tempo", "sre", "devops", "monitoring"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Monitoring",
+    "Topic :: System :: Systems Administration",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.2.0",
+    "jinja2>=3.1.3",
+    "reportlab>=4.1.0",
+    "openpyxl>=3.1.2",
+    "cryptography>=42.0.0",
+    "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.5",
+    "respx>=0.21.1",
+    "ruff>=0.3.0",
+    "mypy>=1.9.0",
+]
+
+[project.scripts]
+grafana-mcp = "grafana_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["BLE001", "S110", "RUF012", "F841", "E501"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+testpaths = ["tests"]

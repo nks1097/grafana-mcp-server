@@ -1,0 +1,23 @@
+services:
+  grafana-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: grafana-mcp-server
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - GRAFANA_URL=${GRAFANA_URL:-http://host.docker.internal:3000}
+      - GRAFANA_API_TOKEN=${GRAFANA_API_TOKEN}
+      - GRAFANA_VERIFY_TLS=${GRAFANA_VERIFY_TLS:-false}
+      - MCP_TRANSPORT=sse
+      - MCP_HOST=0.0.0.0
+      - MCP_PORT=8000
+      - MCP_READ_ONLY=${MCP_READ_ONLY:-false}
+      - MCP_AUDIT_ENABLED=true
+    volumes:
+      - ./reports_output:/app/reports_output
+      - ./audit_grafana_mcp.jsonl:/app/audit_grafana_mcp.jsonl
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
