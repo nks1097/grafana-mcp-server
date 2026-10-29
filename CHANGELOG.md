@@ -15,3 +15,4 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 - Redação automática de segredos em logs e respostas (tokens, senhas).
 - Proteção contra SSRF e limites estritos de concorrência e timeout.
 - Suporte aos transportes STDIO e SSE (Server-Sent Events).
+

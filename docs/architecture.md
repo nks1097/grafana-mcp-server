@@ -65,3 +65,4 @@ flowchart TD
 - Utiliza `httpx.AsyncClient` com pool de conexões persistentes (*keep-alive*).
 - Implementa controle de concorrência por semáforo assíncrono (`asyncio.Semaphore`).
 - Mecanismo de retry automático com backoff exponencial para resiliência contra oscilações de rede.
+

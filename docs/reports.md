@@ -51,3 +51,4 @@ Por padrão, todos os relatórios são gravados no diretório local configurado 
 Cada arquivo recebe um prefixo com o tipo do relatório e um carimbo de data/hora no padrão `YYYYMMDD_HHMMSS`.
 Exemplo:
 `./reports_output/relatorio_executivo_20261029_101013.pdf`
+

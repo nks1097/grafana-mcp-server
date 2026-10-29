@@ -21,3 +21,4 @@ services:
       - ./audit_grafana_mcp.jsonl:/app/audit_grafana_mcp.jsonl
     extra_hosts:
       - "host.docker.internal:host-gateway"
+

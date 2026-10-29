@@ -23,3 +23,4 @@ Responderemos em até 48 horas úteis com o plano de mitigação.
 - **Aprovação HMAC em 2 Passos:** Operações destrutivas exigem token de aprovação assinado.
 - **Redação Automática:** Segredos (Bearer tokens, senhas, chaves privadas) são mascarados antes de qualquer log ou retorno.
 - **Proteção contra SSRF:** URLs arbitrárias são bloqueadas, restringindo o cliente exclusivamente ao host configurado em `GRAFANA_URL`.
+

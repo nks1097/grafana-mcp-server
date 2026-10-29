@@ -45,3 +45,4 @@ htmlcov/
 *.jsonl
 reports_output/
 audit_grafana_mcp.jsonl
+

@@ -22,3 +22,4 @@ Agradecemos o seu interesse em contribuir com o **Grafana MCP Server**!
 3. Certifique-se de que todos os testes passam: `pytest tests/unit -v`.
 4. Faça commit com mensagens descritivas no padrão Conventional Commits.
 5. Abra o Pull Request detalhando as alterações.
+

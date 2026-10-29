@@ -42,3 +42,4 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
 
 ENTRYPOINT ["python", "-m", "grafana_mcp.server"]
 CMD ["--transport", "sse", "--host", "0.0.0.0", "--port", "8000"]
+

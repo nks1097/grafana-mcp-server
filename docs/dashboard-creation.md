@@ -59,3 +59,4 @@ Executa chamadas imediatas em `/api/ds/query` com os targets recém-publicados p
 Gera a URL direta e clicável para o dashboard:
 `http://192.168.0.107:3000/d/linux-srv-mon/linux-servers-monitoring`
 Fornecendo orientações de uso para o operador.
+

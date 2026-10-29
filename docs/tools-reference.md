@@ -875,3 +875,4 @@ Este documento contém o catálogo exaustivo das **100 ferramentas em português
 - **Quando usar:** Na inicialização de agentes de IA e no início de qualquer fluxo de trabalho para certificar que a instância está ativa e respondendo.
 - **Parâmetros:** Nenhum.
 - **Retorno:** Objeto com `status`, `versao_grafana`, `latencia_ms`, `autenticacao`, `datasources_detectadas` e modo de segurança.
+

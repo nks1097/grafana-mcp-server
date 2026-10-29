@@ -16,3 +16,4 @@ Exemplos de comportamento que contribuem para criar um ambiente positivo incluem
 ## Aplicação
 
 Instâncias de comportamento abusivo, hostil ou inaceitável podem ser relatadas aos mantenedores do projeto. Todas as reclamações serão revisadas e investigadas de forma justa e confidencial.
+

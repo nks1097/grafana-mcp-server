@@ -84,3 +84,4 @@ Todas as ações acionadas pelo servidor MCP são registradas em `audit_grafana_
 }
 ```
 Isso permite fácil auditoria externa por times de compliance e SOC.
+

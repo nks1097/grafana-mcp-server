@@ -47,3 +47,4 @@ class GrafanaCapabilities:
             "oncall_disponivel": self.has_oncall,
             "renderizacao_imagem": self.has_image_rendering,
         }
+

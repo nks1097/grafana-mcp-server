@@ -33,3 +33,4 @@ O **Grafana MCP Server** foi desenvolvido para oferecer máxima compatibilidade 
 - **Alexander Zobnin Zabbix Datasource:** Totalmente integrado para métricas do agente Zabbix.
 - **PostgreSQL / MySQL / ClickHouse:** Consultas SQL com validação read-only.
 - **InfluxDB:** Consultas temporais Flux e InfluxQL.
+
