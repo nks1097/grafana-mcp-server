@@ -93,10 +93,10 @@ Edite o arquivo de configuração do Claude Desktop:
 {
   "mcpServers": {
     "grafana-mcp": {
-      "command": "C:\\Users\\Natanael Krindges\\.gemini\\antigravity-ide\\mcp\\grafana\\.venv\\Scripts\\python.exe",
+      "command": "C:\\SEU_CAMINHO\\grafana-mcp-server\\.venv\\Scripts\\python.exe",
       "args": ["-m", "grafana_mcp.server", "--transport", "stdio"],
       "env": {
-        "GRAFANA_URL": "http://192.168.0.107:3000",
+        "GRAFANA_URL": "http://SEU_IP:3000",
         "GRAFANA_API_TOKEN": "glsa_seu_token_de_servico_aqui_exemplo12345",
         "MCP_MODE": "operacional"
       }
@@ -111,10 +111,10 @@ No arquivo `mcp_config.json`:
 {
   "mcpServers": {
     "grafana-mcp": {
-      "command": "C:/Users/Natanael Krindges/.gemini/antigravity-ide/mcp/grafana/.venv/Scripts/python.exe",
+      "command": "C:\\SEU_CAMINHO\\grafana-mcp-server\\.venv\\Scripts\\python.exe",
       "args": ["-m", "grafana_mcp.server"],
       "env": {
-        "GRAFANA_URL": "http://192.168.0.107:3000",
+        "GRAFANA_URL": "http://SEU_IP:3000",
         "GRAFANA_API_TOKEN": "glsa_seu_token_de_servico_aqui_exemplo12345",
         "MCP_MODE": "operacional"
       }
@@ -131,9 +131,9 @@ No arquivo `~/.cursor/mcp.json`:
     "grafana-mcp": {
       "command": "python",
       "args": ["-m", "grafana_mcp.server"],
-      "cwd": "C:\\Users\\Natanael Krindges\\.gemini\\antigravity-ide\\mcp\\grafana",
+      "cwd": "C:\\SEU_CAMINHO\\grafana-mcp-server\\.venv\\Scripts\\python.exe",
       "env": {
-        "GRAFANA_URL": "http://192.168.0.107:3000",
+        "GRAFANA_URL": "http://SEU_IP:3000",
         "GRAFANA_API_TOKEN": "glsa_seu_token_de_servico_aqui_exemplo12345"
       }
     }
