@@ -140,7 +140,9 @@ No arquivo `~/.cursor/mcp.json`:
   }
 }
 ```
+### VIDEO DE CONFIGURAÇÃO DE FORMA SIMPLIFICADA
 
+ ▶️ **[Clique aqui para assistir ao vídeo completo no Google Drive Assiste em Full Hd (1080P)](https://drive.google.com/file/d/14ufaVIexxAb8eLNV81xWtnM-JWlvHHjP/view?usp=drive_link)**
 ---
 
 ## 🐳 Execução via Docker Compose (Transporte SSE)
